@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hell Algorithm</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      transition: background-color 0.3s, color 0.3s;
+    }header {
+  background-image: url('fon.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav button {
+  background: linear-gradient(45deg, #ff3c00, #ff9000);
+  color: white;
+  border: 2px solid #ff6600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.6);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.9);
+}
+
+nav button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 11%);
+  background-size: 5% 5%;
+  animation: fire-glow 2s linear infinite;
+}
+
+@keyframes fire-glow {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.chapter {
+  display: none;
+  padding: 2rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+.chapter.active {
+  display: block;
+  animation: fire-fade 0.6s ease-in-out;
+}
+
+@keyframes fire-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
+}
+
+#theme-toggle {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.light-theme {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.light-theme header h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+.light-theme nav button {
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+  box-shadow: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hell Algorithm | Сезон 1</h1>
+    <nav>
+      <button onclick="showChapter(1)">Эпизод 1</button>
+      <button onclick="showChapter(2)">Эпизод 2</button>
+      <button onclick="showChapter(3)">Эпизод 3</button>
+      <button onclick="showChapter(4)">Эпизод 4</button>
+      <button onclick="showChapter(5)">Эпизод 5</button>
+      <button onclick="showChapter(6)">Эпизод 6</button>
+      <button onclick="showChapter(7)">Эпизод 7</button>
+      <button onclick="showChapter(8)">Эпизод 8 (ФИНАЛ)</button>
+    </nav>
+  </header>  <main>
+    <section id="chapter-1" class="chapter active">
+      <h2>Эпизод 1: Когда небо спустилось вниз </h2>
+      <p>(Темный силуэт стоит на высокой башне Ада. Внизу – хаос, пожары, крики. Он наблюдает.)
+
+ Кодекс: (тихо, сам к себе)
+ – Они снова пришли.
+
+ Это случается каждый год.
+
+ Когда небо открывается, когда через него пролетают золотые лучи, а вместе с ними спускаются они.
+
+ Армия Рая.
+
+ Их мечи – чистая энергия.  Их глаза – ослепительные светила.  Их крылья – разорванные полотна света, курящие все вокруг.
+
+ Они не говорят ни слова.
+
+ Они просто приходят – и начинается резня.
+
+ Я стою на крыше и смотрю вниз.
+
+ Улицы Ада превращаются в поле битвы.  Демоны гибнут десятками.  Кажется, что на этот раз все закончится быстрее обычного.
+
+ Я вижу, как один из ангелов медленно шагает по улице.  Его белый плащ заляпан черной кровью.  Он тянет за собой меч, оставляя за собой горящий след.
+
+ Я знаю, кто это.
+
+ Иеремия.
+
+ Один из самых жестоких воинов Рая.  Он не просто убивает демонов – он очищает их.  Выжигает их души изнутри.
+
+ В этот раз он пришел лично.
+
+ На этот раз они не просто истребляют нас.
+
+ В этот раз они хотят довести дело до конца.
+
+ Я вздыхаю.
+
+ Ну что ж… Это будет интересно.
+
+ (Кодекс спускается вниз, в самое сердце битвы.)</p>
+    </section>
+    <section id="chapter-2" class="chapter">
+      <h2>Эпизод 2: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-3" class="chapter">
+      <h2>Эпизод 3: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-4" class="chapter">
+      <h2>Эпизод 4: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-5" class="chapter">
+      <h2>Эпизод 5: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-6" class="chapter">
+      <h2>Эпизод 6: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-7" class="chapter">
+      <h2>Эпизод 7: ???</h2>
+      <p>Скоро...</p>
+    </section>
+    <section id="chapter-8" class="chapter">
+      <h2>Эпизод 8: ???</h2>
+      <p>Скоро...</p>
+    </section>
+  </main>  <div id="theme-toggle">
+    <button onclick="toggleTheme()">🌗 Поменяй тему</button>
+  </div>  <footer>
+    <p>© 2025 oderushh. Все права защищеные.</p>
+  </footer>  <script>
+    function showChapter(number) {
+      document.querySelectorAll('.chapter').forEach((el) => {
+        el.classList.remove('active');
+      });
+      document.getElementById(`chapter-${number}`).classList.add('active');
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+    }
+  </script></body>
+</html>
